@@ -1,25 +1,350 @@
-Original code கிடைத்தது! இப்போது **existing design-ஐ மாற்றாமல்** services மட்டும் update செய்கிறேன்.Ready! **இதை GitHub-இல் எப்படி upload செய்வது:**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javin Corp</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./logo.png" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary fixed-top">
+    <div class="container">
+        <img src="./images/Logo.png" alt="logo" style="height: 48px;"/>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#why-us">Why Choose Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
----
+    <!-- Hero Section -->
+    <section class="hero text-white text-center" id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="display-4 fw-bold mb-4">Smart Business Solutions for Your Growth</h1>
+                    <p class="lead mb-5">At Javin Corp, we specialize in providing comprehensive business solutions that drive efficiency, enhance productivity, and maximize profitability.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-**File 1 — index.html மாற்றவும்:**
-1. github.com/rajadurai1981/javin-corp திறக்கவும்
-2. `index.html` கிளிக் → ✏️ Edit → **Ctrl+A → Delete**
-3. இந்த file-ஐ திறந்து **Ctrl+A → Ctrl+C** → GitHub-இல் **Ctrl+V**
-4. **"Commit changes"** கிளிக்
+   <!-- Services Section -->
+<section class="py-5 py-lg-6" id="services">
+    <div class="container py-4">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="section-header fw-bold" data-aos="fade-up">Our Services</h2>
+                <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100">
+                    Comprehensive solutions tailored to meet your business needs
+                </p>
+            </div>
+        </div>
 
-**File 2 — Logo upload செய்யவும்:**
-1. Repository-இல் `images` folder கிளிக்
-2. **"Add file" → "Upload files"**
-3. உங்கள் **Logo.png** upload செய்யவும்
-4. **"Commit changes"** கிளிக்
+        <div class="row g-4 justify-content-center">
 
----
+            <!-- IWG Channel Development Partner -->
+            <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card service-card h-100">
+                    <img src="./images/infra.jpeg" class="card-img-top" alt="IWG Workspace Solutions">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title mb-3">IWG Channel Development Partner</h4>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Regus – Premium business centres across the globe.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Spaces – Creative co-working environments for modern businesses.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>HQ – Professional on-demand office solutions.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Signature – Luxury managed office suites for corporates.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-**மாற்றியது மட்டும்:**
-- ✅ 5 புதிய services cards
-- ✅ Logo — `images/Logo.png` இப்போது navbar-இல்
-- ✅ Contact form dropdown — புதிய services
-- ✅ Footer links — புதிய services
+            <!-- Commercial Property -->
+            <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card service-card h-100">
+                    <img src="./images/finance.jpeg" class="card-img-top" alt="Commercial Property">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title mb-3">Commercial Property Acquisition & Corporate Leasing</h4>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Commercial property sourcing & due diligence support.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Corporate office lease negotiation & management.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Site selection & feasibility advisory.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-Design, colors, layout எல்லாம் **same-ஆக இருக்கும்!** 👍
+            <!-- BRIO Smart Board -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card service-card h-100">
+                    <img src="./images/it-setup.jpeg" class="card-img-top" alt="BRIO Smart Board">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title mb-3">BRIO Smart Board Partner</h4>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Interactive smart display solutions for corporates & schools.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Boardroom & training room installations.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>After-sales support & user training.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marg ERP -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card service-card h-100">
+                    <img src="./images/audit.png" class="card-img-top" alt="Marg ERP">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title mb-3">Master Partner – Marg ERP Software</h4>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Marg ERP for retail, pharma, FMCG & distribution businesses.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>GST-compliant billing, inventory & accounting.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Implementation, training & AMC support.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vyapar -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="card service-card h-100">
+                    <img src="./images/edu.png" class="card-img-top" alt="Vyapar Software">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title mb-3">Channel Partner – Vyapar Software</h4>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>GST billing & invoicing for small & medium businesses.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Stock & inventory management.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Profit & loss reports & financial insights.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-5 py-lg-6" id="why-us">
+        <div class="container py-4">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="section-header fw-bold" data-aos="fade-up">Why Choose Javin Corp</h2>
+                    <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100">We deliver excellence in every aspect of our service</p>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card feature-card text-center p-4 h-100">
+                        <div class="feature-icon"><i class="bi bi-layers"></i></div>
+                        <h4>End-to-End Business Solutions</h4>
+                        <p class="mb-0">From workspace to software, we cover all aspects of business growth.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card feature-card text-center p-4 h-100">
+                        <div class="feature-icon"><i class="bi bi-sliders"></i></div>
+                        <h4>Customized Services</h4>
+                        <p class="mb-0">Tailored solutions to fit your specific industry needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card feature-card text-center p-4 h-100">
+                        <div class="feature-icon"><i class="bi bi-people"></i></div>
+                        <h4>Expert Guidance</h4>
+                        <p class="mb-0">A team of professionals with deep industry knowledge.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card feature-card text-center p-4 h-100">
+                        <div class="feature-icon"><i class="bi bi-cash-coin"></i></div>
+                        <h4>Affordable & Scalable</h4>
+                        <p class="mb-0">Cost-effective solutions for startups, SMEs, and large enterprises.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card feature-card text-center p-4 h-100">
+                        <div class="feature-icon"><i class="bi bi-headset"></i></div>
+                        <h4>Customer-Centric Approach</h4>
+                        <p class="mb-0">Dedicated support and seamless service experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 py-lg-6" id="contact">
+        <div class="container py-4">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="section-header fw-bold" data-aos="fade-up">Let's Grow Your Business Together!</h2>
+                    <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100">Transform your business with smart solutions. Contact us today!</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info text-white p-4 p-lg-5">
+                        <h3 class="mb-4">Contact Information</h3>
+                        <p>We're here to help you transform your business with smart solutions.</p>
+                        <div class="mt-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="bi bi-geo-alt"></i>
+                                <div>105, North 6th Street, Maruti Nagar, Karaikudi, Tamilnadu - 630001</div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="bi bi-telephone"></i>
+                                <div>9962985155</div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="bi bi-envelope"></i>
+                                <div>connect@javincorp.co.in</div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="bi bi-globe"></i>
+                                <div>www.javincorp.co.in</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow p-4 p-lg-5">
+                        <h3 class="mb-4">Send Us a Message</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control form-control-lg" placeholder="Your Phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select form-select-lg" required>
+                                        <option value="" disabled selected>Select Service</option>
+                                        <option value="iwg">IWG Workspace Solutions</option>
+                                        <option value="property">Commercial Property & Corporate Leasing</option>
+                                        <option value="brio">BRIO Smart Board</option>
+                                        <option value="marg">Marg ERP Software</option>
+                                        <option value="vyapar">Vyapar Software</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control form-control-lg" rows="5" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-3 text-white">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">Javin Corp</h5>
+                    <p class="opacity-75">Smart Business Solutions for Your Growth. We specialize in providing comprehensive business solutions that drive efficiency, enhance productivity, and maximize profitability.</p>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Our Services</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link p-0">IWG Workspace</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link p-0">Commercial Property</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link p-0">BRIO Smart Board</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link p-0">Marg ERP</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link p-0">Vyapar Software</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-md-0 d-none d-md-block">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#home" class="nav-link p-0">Home</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link p-0">Services</a></li>
+                        <li class="nav-item"><a href="#why-us" class="nav-link p-0">Why Choose Us</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link p-0">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4 d-none d-md-block">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link p-0"><i class="bi bi-telephone me-2"></i>9962985155</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link p-0"><i class="bi bi-envelope me-2"></i>connect@javincorp.co.in</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link p-0"><i class="bi bi-globe me-2"></i>www.javincorp.co.in</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top border-secondary">
+                <p class="opacity-75">&copy; 2025 Javin Corp. All Rights Reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
+                    <li class="ms-3"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+                    <li class="ms-3"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+                    <li class="ms-3"><a href="#" class="text-white"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const headerOffset = 70;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    new bootstrap.Collapse(navbarCollapse).hide();
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
