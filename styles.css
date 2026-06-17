@@ -63,7 +63,7 @@ body {
    HERO SECTION
 =========================== */
 .hero {
-    background: linear-gradient(rgba(10, 30, 70, 0.50), rgba(243, 156, 18, 0.30)),
+    background: linear-gradient(rgba(15, 25, 60, 0.75), rgba(20, 40, 80, 0.70)),
                 url('https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1600&q=80') center center / cover no-repeat;
     min-height: 100vh;
     display: flex;
