@@ -63,8 +63,11 @@ body {
    HERO SECTION
 =========================== */
 .hero {
-    background: linear-gradient(rgba(10, 30, 70, 0.45), rgba(243, 156, 18, 0.35)),
-                url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80') center 70% / cover no-repeat;
+    background: linear-gradient(135deg,
+        #1a2a6c 0%,
+        #1a5276 35%,
+        #2471a3 65%,
+        #1f618d 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -76,12 +79,29 @@ body {
     overflow: hidden;
 }
 
+/* Decorative glowing circles in background */
 .hero::before {
-    content: none;
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: rgba(243,156,18,0.08);
+    top: -150px;
+    right: -150px;
+    pointer-events: none;
 }
 
 .hero::after {
-    content: none;
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    bottom: -100px;
+    left: -100px;
+    pointer-events: none;
 }
 
 .hero h1 {
