@@ -32,6 +32,7 @@ body {
 .bg-gradient-primary {
     background: linear-gradient(135deg, var(--accent), var(--secondary)) !important;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.35s ease;
 }
 
 .navbar-brand {
