@@ -282,6 +282,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init({ duration: 800, once: true });
+
+        // Hide navbar on scroll down, show on scroll up
+        let lastScrollY = window.scrollY;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY <= 10) {
+                // At top — always show
+                navbar.style.transform = 'translateY(0)';
+            } else if (currentScrollY > lastScrollY) {
+                // Scrolling DOWN — hide navbar
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                // Scrolling UP — show navbar
+                navbar.style.transform = 'translateY(0)';
+            }
+
+            lastScrollY = currentScrollY;
+        });
     </script>
 </body>
 </html>
