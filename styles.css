@@ -62,8 +62,8 @@ body {
    HERO SECTION
 =========================== */
 .hero {
-    background: linear-gradient(rgba(10, 30, 70, 0.72), rgba(10, 30, 70, 0.72)),
-                url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80') center / cover no-repeat;
+    background: linear-gradient(rgba(10, 30, 70, 0.45), rgba(243, 156, 18, 0.35)),
+                url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80') center / cover no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;
