@@ -212,6 +212,36 @@ footer p {
 }
 
 /* ===========================
+   STATS SECTION
+=========================== */
+.stat-card {
+    padding: 20px 10px;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #f39c12;
+    line-height: 1;
+    display: inline;
+}
+
+.stat-plus {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #f39c12;
+    display: inline;
+}
+
+.stat-label {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.85);
+    margin-top: 8px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* ===========================
    WHATSAPP FLOAT BUTTON
 =========================== */
 .whatsapp-float {
