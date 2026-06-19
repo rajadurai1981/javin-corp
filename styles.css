@@ -64,25 +64,21 @@ body {
 =========================== */
 .hero {
     background: linear-gradient(rgba(10, 30, 70, 0.50), rgba(243, 156, 18, 0.30)),
-                url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80') center 80% / cover no-repeat;
+                url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80') center 60% / cover no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 130px;
+    padding-top: 90px;
     padding-bottom: 60px;
     text-align: center;
     position: relative;
     overflow: hidden;
+    background-attachment: scroll;
 }
 
-.hero::before {
-    content: none;
-}
-
-.hero::after {
-    content: none;
-}
+.hero::before { content: none; }
+.hero::after  { content: none; }
 
 .hero h1 {
     font-size: 48px;
