@@ -54,9 +54,9 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Push body content below fixed navbar */
+/* Push body content below fixed navbar + announcement banner */
 body {
-    padding-top: 90px;
+    padding-top: 128px;
 }
 
 /* Remove padding-top from hero since body handles it */
@@ -237,6 +237,33 @@ footer p {
     margin-top: 8px;
     font-weight: 500;
     letter-spacing: 0.5px;
+}
+
+/* ===========================
+   ANNOUNCEMENT BANNER
+=========================== */
+@keyframes bannerShine {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+.banner-scroll {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 25s linear infinite;
+}
+
+@keyframes scrollText {
+    0%   { transform: translateX(100vw); }
+    100% { transform: translateX(-100%); }
+}
+
+/* ===========================
+   PRODUCT POPUP
+=========================== */
+@keyframes popupSlide {
+    from { opacity: 0; transform: translateY(-30px) scale(0.95); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 /* ===========================
