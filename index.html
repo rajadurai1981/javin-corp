@@ -15,20 +15,20 @@
     <!-- ANNOUNCEMENT BANNER -->
     <div id="announcementBanner" style="
         position: fixed;
-        top: 90px;
+        top: 72px;
         left: 0;
         width: 100%;
-        z-index: 999;
+        z-index: 1050;
         background: linear-gradient(90deg, #1a5276, #f39c12, #1a5276);
         background-size: 200% auto;
         animation: bannerShine 4s linear infinite;
-        padding: 8px 0;
+        padding: 6px 0;
         text-align: center;
-        font-size: 0.88rem;
+        font-size: 0.85rem;
         font-weight: 600;
         color: white;
         letter-spacing: 0.5px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        overflow: hidden;
     ">
         <span class="banner-scroll">
             🚀 &nbsp; <strong>NEW LAUNCH:</strong> Javin Finance & Chit Software &nbsp;|&nbsp;
@@ -38,8 +38,8 @@
             💊 &nbsp; <strong>NEW:</strong> Javin All-in-One Medical Software &nbsp;|&nbsp;
             📞 &nbsp; Call us: +91 9962985155
         </span>
-        <button onclick="document.getElementById('announcementBanner').style.display='none'; document.body.style.paddingTop='90px';"
-            style="position:absolute; right:12px; top:50%; transform:translateY(-50%); background:none; border:none; color:white; font-size:1.1rem; cursor:pointer; opacity:0.8;">✕</button>
+        <button onclick="document.getElementById('announcementBanner').style.display='none'; document.querySelector('.navbar').style.top='0';"
+            style="position:absolute; right:12px; top:50%; transform:translateY(-50%); background:none; border:none; color:white; font-size:1rem; cursor:pointer; opacity:0.8;">✕</button>
     </div>
 
     <!-- NAVBAR -->
