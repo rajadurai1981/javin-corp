@@ -56,7 +56,7 @@ body {
 
 /* Push body content below fixed navbar + announcement banner */
 body {
-    padding-top: 128px;
+    padding-top: 122px;
 }
 
 /* Remove padding-top from hero since body handles it */
