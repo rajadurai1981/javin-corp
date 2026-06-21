@@ -12,6 +12,36 @@
 </head>
 <body>
 
+    <!-- ANNOUNCEMENT BANNER -->
+    <div id="announcementBanner" style="
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background: linear-gradient(90deg, #1a5276, #f39c12, #1a5276);
+        background-size: 200% auto;
+        animation: bannerShine 4s linear infinite;
+        padding: 8px 0;
+        text-align: center;
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: white;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    ">
+        <span class="banner-scroll">
+            🚀 &nbsp; <strong>NEW LAUNCH:</strong> Javin Finance & Chit Software &nbsp;|&nbsp;
+            💊 &nbsp; <strong>NEW:</strong> Javin All-in-One Medical Software &nbsp;|&nbsp;
+            📞 &nbsp; Call us: +91 9962985155 &nbsp;|&nbsp;
+            🚀 &nbsp; <strong>NEW LAUNCH:</strong> Javin Finance & Chit Software &nbsp;|&nbsp;
+            💊 &nbsp; <strong>NEW:</strong> Javin All-in-One Medical Software &nbsp;|&nbsp;
+            📞 &nbsp; Call us: +91 9962985155
+        </span>
+        <button onclick="document.getElementById('announcementBanner').style.display='none'; document.body.style.paddingTop='90px';"
+            style="position:absolute; right:12px; top:50%; transform:translateY(-50%); background:none; border:none; color:white; font-size:1.1rem; cursor:pointer; opacity:0.8;">✕</button>
+    </div>
+
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary fixed-top">
         <div class="container">
@@ -393,6 +423,80 @@
         <i class="bi bi-whatsapp"></i>
     </a>
 
+    <!-- PRODUCT POPUP MODAL -->
+    <div id="productPopup" style="
+        display:none;
+        position:fixed; top:0; left:0; width:100%; height:100%;
+        background:rgba(0,0,0,0.6);
+        z-index:9999;
+        align-items:center;
+        justify-content:center;
+    ">
+        <div style="
+            background:white;
+            border-radius:20px;
+            max-width:520px;
+            width:90%;
+            overflow:hidden;
+            box-shadow:0 20px 60px rgba(0,0,0,0.3);
+            animation: popupSlide 0.4s ease;
+            position:relative;
+        ">
+            <!-- Header -->
+            <div style="background:linear-gradient(135deg,#1a5276,#2e86c1); padding:20px 25px; color:white;">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <div>
+                        <span style="font-size:0.75rem; letter-spacing:2px; opacity:0.85;">JAVIN CORP PRESENTS</span>
+                        <h4 style="margin:4px 0 0; font-weight:800;">Our New Software Products</h4>
+                    </div>
+                    <button onclick="closePopup()" style="background:rgba(255,255,255,0.2); border:none; color:white; width:32px; height:32px; border-radius:50%; font-size:1rem; cursor:pointer;">✕</button>
+                </div>
+            </div>
+
+            <!-- Products -->
+            <div style="padding:25px;">
+
+                <!-- Product 1 -->
+                <div style="border:2px solid #2e86c1; border-radius:14px; padding:18px; margin-bottom:15px; position:relative; overflow:hidden;">
+                    <div style="position:absolute; top:10px; right:10px; background:#f39c12; color:white; font-size:0.65rem; font-weight:700; padding:3px 10px; border-radius:20px;">NEW LAUNCH</div>
+                    <div style="display:flex; align-items:center; gap:12px;">
+                        <div style="font-size:2.2rem;">💰</div>
+                        <div>
+                            <h5 style="margin:0; color:#1a5276; font-weight:800;">Javin Finance & Chit Software</h5>
+                            <p style="margin:5px 0 0; font-size:0.85rem; color:#555;">Complete Chit Fund Management • Member Tracking • Payment Collection • Reports & Analytics</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/919962985155?text=I%20am%20interested%20in%20Javin%20Finance%20%26%20Chit%20Software.%20Please%20share%20more%20details."
+                       target="_blank"
+                       style="display:block; margin-top:12px; background:linear-gradient(135deg,#1a5276,#2e86c1); color:white; text-align:center; padding:9px; border-radius:10px; text-decoration:none; font-weight:600; font-size:0.9rem;">
+                        🚀 Get Demo via WhatsApp
+                    </a>
+                </div>
+
+                <!-- Product 2 -->
+                <div style="border:2px solid #27ae60; border-radius:14px; padding:18px; position:relative; overflow:hidden;">
+                    <div style="position:absolute; top:10px; right:10px; background:#27ae60; color:white; font-size:0.65rem; font-weight:700; padding:3px 10px; border-radius:20px;">NEW LAUNCH</div>
+                    <div style="display:flex; align-items:center; gap:12px;">
+                        <div style="font-size:2.2rem;">💊</div>
+                        <div>
+                            <h5 style="margin:0; color:#1e8449; font-weight:800;">Javin All-in-One Medical Software</h5>
+                            <p style="margin:5px 0 0; font-size:0.85rem; color:#555;">Billing & GST • Inventory • Expiry Tracking • Sales Returns • Tamil & English UI</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/919962985155?text=I%20am%20interested%20in%20Javin%20Medical%20Software.%20Please%20share%20more%20details."
+                       target="_blank"
+                       style="display:block; margin-top:12px; background:linear-gradient(135deg,#1e8449,#27ae60); color:white; text-align:center; padding:9px; border-radius:10px; text-decoration:none; font-weight:600; font-size:0.9rem;">
+                        🚀 Get Demo via WhatsApp
+                    </a>
+                </div>
+
+                <p style="text-align:center; margin-top:15px; font-size:0.8rem; color:#999;">
+                    <button onclick="closePopup()" style="background:none; border:none; color:#aaa; cursor:pointer; font-size:0.8rem;">✕ Close and continue browsing</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
@@ -477,6 +581,20 @@
             document.getElementById('contactForm').classList.add('d-none');
             document.getElementById('formSuccess').classList.remove('d-none');
         }
+        // ── Product Popup ──
+        function closePopup() {
+            document.getElementById('productPopup').style.display = 'none';
+        }
+
+        // Show popup after 2 seconds
+        setTimeout(() => {
+            document.getElementById('productPopup').style.display = 'flex';
+        }, 2000);
+
+        // Close popup on background click
+        document.getElementById('productPopup').addEventListener('click', function(e) {
+            if (e.target === this) closePopup();
+        });
     </script>
 </body>
 </html>
