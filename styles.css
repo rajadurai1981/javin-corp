@@ -10,9 +10,6 @@
     --body-text: #333;
 }
 
-/* ===========================
-   GLOBAL RESET
-=========================== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -21,33 +18,24 @@ body {
     color: var(--body-text);
     line-height: 1.6;
     overflow-x: hidden;
-    padding-top: 80px; /* Navbar உயரம் */
+    padding-top: 80px;
 }
 
 /* ===========================
-   NAVBAR & HERO
+   LAYOUT FIXES (Gap Reduction)
 =========================== */
-.bg-gradient-primary {
-    background: linear-gradient(135deg, var(--accent), var(--secondary)) !important;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
-}
+/* செக்ஷன் இடைவெளியைக் குறைத்தல் */
+section { padding: 30px 0; } 
 
-.hero {
-    background: linear-gradient(rgba(10, 30, 70, 0.7), rgba(10, 30, 70, 0.7)),
-                url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&q=80') center/cover no-repeat;
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
+/* கார்டுகளின் கிரிட் கேப் */
+.row.g-4 {
+    margin-top: 5px !important; /* தலைப்புக்கும் கார்டிற்கும் உள்ள இடைவெளியைக் குறைத்தது */
+    gap: 0;
 }
 
 /* ===========================
    PRODUCT CARDS (Corporate Look)
 =========================== */
-section { padding: 50px 0; } /* இடைவெளியை சீராக்க */
-
 .product-card { 
     border-radius: 15px; 
     border: none;
@@ -55,6 +43,7 @@ section { padding: 50px 0; } /* இடைவெளியை சீராக்�
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
     transition: all 0.3s ease;
     height: 100%;
+    margin-bottom: 20px; /* கார்டுகளுக்கு இடையே உள்ள அடிபாக இடைவெளி */
 }
 
 .product-card:hover { 
@@ -63,39 +52,38 @@ section { padding: 50px 0; } /* இடைவெளியை சீராக்�
 }
 
 .card-img-top { 
-    height: 200px; 
+    height: 180px; /* படத்தின் உயரத்தைக் குறைத்து கார்டை கச்சிதமாக்கியுள்ளேன் */
     object-fit: cover; 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
+.card-body { padding: 20px !important; }
+
 .card-title {
     color: var(--primary);
     font-weight: 700;
-    font-size: 1.25rem;
-    margin-bottom: 15px;
+    font-size: 1.15rem; /* எழுத்து அளவு சற்று சிறியதாகி கார்ப்பரேட் லுக்கிற்கு மாறியுள்ளது */
+    margin-bottom: 10px;
 }
 
-.feature-text { font-size: 0.9rem; color: #555; }
+.feature-text { font-size: 0.85rem; color: #555; margin-bottom: 10px !important; }
 
 /* ===========================
    BUTTONS
 =========================== */
 .btn-demo { 
     background-color: var(--accent); 
-    color: #fff; 
-    font-weight: 600; 
-    border-radius: 8px; 
+    color: #fff; font-weight: 600; border-radius: 8px; font-size: 0.9rem;
 }
 .btn-learn { 
-    border: 1px solid var(--primary); 
-    color: var(--primary); 
-    border-radius: 8px; 
+    border: 1px solid var(--primary); color: var(--primary); 
+    border-radius: 8px; font-size: 0.9rem;
 }
 .btn-learn:hover { background: var(--primary); color: #fff; }
 
 /* ===========================
-   WHATSAPP & ANIMATIONS
+   GENERAL & ANIMATION
 =========================== */
 .whatsapp-float {
     position: fixed; bottom: 20px; right: 20px;
@@ -105,9 +93,8 @@ section { padding: 50px 0; } /* இடைவெளியை சீராக்�
     font-size: 30px; z-index: 9999; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.animate { animation: fadeIn 0.8s ease forwards; }
-
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+.animate { animation: fadeIn 0.8s ease forwards; }
