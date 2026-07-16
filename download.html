@@ -3,44 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
-    <title>Our Products | Javin Corp</title>
+    <title>Our Software Products | Javin Corp</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts (Corporate Look) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        .product-card { transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 15px; overflow: hidden; }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; }
-        .card-img-top { height: 200px; object-fit: cover; background-color: #f8f9fa; }
-        .btn-demo { background-color: #ffc107; font-weight: bold; border-radius: 8px; }
-        .btn-learn { border-radius: 8px; font-weight: 500; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #0a3d62 0%, #1a5276 100%);
+            color: white;
+            padding: 80px 0 60px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .hero-title {
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .product-card { 
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+            border-radius: 12px; 
+            border: none;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+            overflow: hidden; 
+        }
+        .product-card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12); 
+        }
+        .card-img-top { 
+            height: 220px; 
+            object-fit: cover; 
+            border-bottom: 3px solid #f39c12;
+        }
+        .card-title {
+            color: #0a3d62;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
+        .feature-text {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        .btn-demo { 
+            background-color: #f39c12; 
+            color: #fff;
+            font-weight: 600; 
+            border-radius: 6px; 
+            border: none;
+            padding: 10px 0;
+            transition: background 0.3s;
+        }
+        .btn-demo:hover {
+            background-color: #d68910;
+            color: #fff;
+        }
+        .btn-learn { 
+            border-radius: 6px; 
+            font-weight: 500; 
+            color: #1a5276;
+            border: 1px solid #1a5276;
+            padding: 10px 0;
+        }
+        .btn-learn:hover {
+            background-color: #1a5276;
+            color: #fff;
+        }
     </style>
 </head>
-<body class="bg-light">
+<body>
 
     <!-- Header Section -->
-    <section class="py-5" style="background: linear-gradient(90deg, #1a5276, #165276); color: white;">
-        <div class="container text-center pt-5 pb-3">
-            <h1 class="fw-bold display-5">Our Software Products</h1>
-            <p class="lead" style="opacity: 0.9;">Comprehensive solutions tailored to meet your business needs</p>
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="hero-title display-4 mb-3">Innovative Software Solutions</h1>
+            <p class="lead fw-light" style="opacity: 0.9; max-width: 700px; margin: 0 auto;">
+                Empower your business with Javin Corp's cutting-edge software products designed for growth, efficiency, and scale.
+            </p>
         </div>
     </section>
 
     <!-- Products Grid -->
     <section class="py-5">
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-4 mt-2">
 
                 <!-- 1. Javin Medical ERP -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="https://placehold.co/600x400/1a5276/FFFFFF?text=Javin+Medical+ERP" class="card-img-top" alt="Javin Medical ERP">
-                        <div class="card-body d-flex flex-column">
-                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin Medical ERP</h4>
-                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Billing, GST Reports, Inventory, Expiry Tracking, Sales Returns.</p>
-                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Pharmacies, Hospitals, Clinics.</p>
-                            <div class="mt-auto d-flex justify-content-between gap-2">
-                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Medical%20ERP" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
-                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                    <div class="card h-100 product-card">
+                        <!-- Medical/Pharmacy Image -->
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Javin Medical ERP">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h4 class="card-title">Javin Medical ERP</h4>
+                            <p class="feature-text mb-3">
+                                <i class="bi bi-check2-circle text-success me-2"></i><strong>Features:</strong> GST Billing, Inventory Management, Expiry Date Tracking, Sales Returns & Analytics.
+                            </p>
+                            <p class="feature-text mb-4">
+                                <i class="bi bi-buildings-fill text-primary me-2"></i><strong>Industries:</strong> Pharmacies, Hospitals, Clinics.
+                            </p>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Medical%20ERP" target="_blank" class="btn btn-demo w-50"><i class="bi bi-play-fill me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-learn w-50">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -48,15 +120,20 @@
 
                 <!-- 2. Javin POS -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="https://placehold.co/600x400/1a5276/FFFFFF?text=Javin+POS" class="card-img-top" alt="Javin POS">
-                        <div class="card-body d-flex flex-column">
-                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin POS</h4>
-                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Barcode Billing, Stock Management, Daily Sales Reports, Fast Checkout.</p>
-                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Supermarkets, Retail Shops, Groceries.</p>
-                            <div class="mt-auto d-flex justify-content-between gap-2">
-                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20POS" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
-                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                    <div class="card h-100 product-card">
+                        <!-- Retail/Supermarket Image -->
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Javin POS">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h4 class="card-title">Javin POS</h4>
+                            <p class="feature-text mb-3">
+                                <i class="bi bi-check2-circle text-success me-2"></i><strong>Features:</strong> Fast Barcode Billing, Stock Management, Daily Sales Reports, Touch-screen UI.
+                            </p>
+                            <p class="feature-text mb-4">
+                                <i class="bi bi-buildings-fill text-primary me-2"></i><strong>Industries:</strong> Supermarkets, Retail Shops, Groceries.
+                            </p>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20POS" target="_blank" class="btn btn-demo w-50"><i class="bi bi-play-fill me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-learn w-50">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -64,15 +141,20 @@
 
                 <!-- 3. Javin ERP -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="https://placehold.co/600x400/1a5276/FFFFFF?text=Javin+ERP" class="card-img-top" alt="Javin ERP">
-                        <div class="card-body d-flex flex-column">
-                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin ERP</h4>
-                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Complete Accounting, HR/Payroll, CRM, Manufacturing & Production.</p>
-                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Manufacturing, Wholesale, Enterprise.</p>
-                            <div class="mt-auto d-flex justify-content-between gap-2">
-                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20ERP" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
-                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                    <div class="card h-100 product-card">
+                        <!-- Corporate/Office Image -->
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Javin ERP">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h4 class="card-title">Javin ERP</h4>
+                            <p class="feature-text mb-3">
+                                <i class="bi bi-check2-circle text-success me-2"></i><strong>Features:</strong> Complete Accounting, HR & Payroll, CRM, Manufacturing & Production Tracking.
+                            </p>
+                            <p class="feature-text mb-4">
+                                <i class="bi bi-buildings-fill text-primary me-2"></i><strong>Industries:</strong> Manufacturing, Wholesale, Enterprise.
+                            </p>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20ERP" target="_blank" class="btn btn-demo w-50"><i class="bi bi-play-fill me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-learn w-50">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -80,15 +162,20 @@
 
                 <!-- 4. Javin Finance -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="https://placehold.co/600x400/1a5276/FFFFFF?text=Javin+Finance" class="card-img-top" alt="Javin Finance">
-                        <div class="card-body d-flex flex-column">
-                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin Finance</h4>
-                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Loan Management, EMI Calculation, Daily/Weekly Collection Tracking.</p>
-                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Microfinance, NBFCs, Money Lenders.</p>
-                            <div class="mt-auto d-flex justify-content-between gap-2">
-                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Finance" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
-                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                    <div class="card h-100 product-card">
+                        <!-- Finance/Calculator Image -->
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Javin Finance">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h4 class="card-title">Javin Finance</h4>
+                            <p class="feature-text mb-3">
+                                <i class="bi bi-check2-circle text-success me-2"></i><strong>Features:</strong> Loan Management, Auto EMI Calculation, Daily/Weekly Collection Tracking, Due Alerts.
+                            </p>
+                            <p class="feature-text mb-4">
+                                <i class="bi bi-buildings-fill text-primary me-2"></i><strong>Industries:</strong> Microfinance, NBFCs, Money Lenders.
+                            </p>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Finance" target="_blank" class="btn btn-demo w-50"><i class="bi bi-play-fill me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-learn w-50">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -96,15 +183,20 @@
 
                 <!-- 5. Javin Chit Fund -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="https://placehold.co/600x400/1a5276/FFFFFF?text=Javin+Chit+Fund" class="card-img-top" alt="Javin Chit Fund">
-                        <div class="card-body d-flex flex-column">
-                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin Chit Fund</h4>
-                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Member Tracking, Dividend Calculation, Auction Management, Receipts.</p>
-                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Chit Fund Companies.</p>
-                            <div class="mt-auto d-flex justify-content-between gap-2">
-                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Chit%20Fund" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
-                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                    <div class="card h-100 product-card">
+                        <!-- Chit Fund/Money Image -->
+                        <img src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Javin Chit Fund">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h4 class="card-title">Javin Chit Fund</h4>
+                            <p class="feature-text mb-3">
+                                <i class="bi bi-check2-circle text-success me-2"></i><strong>Features:</strong> Member Tracking, Dividend Calculation, Auction Management, Instant Receipts.
+                            </p>
+                            <p class="feature-text mb-4">
+                                <i class="bi bi-buildings-fill text-primary me-2"></i><strong>Industries:</strong> Registered Chit Fund Companies.
+                            </p>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Chit%20Fund" target="_blank" class="btn btn-demo w-50"><i class="bi bi-play-fill me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-learn w-50">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -112,15 +204,20 @@
 
                 <!-- 6. Javin Pawn Broking -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="https://placehold.co/600x400/1a5276/FFFFFF?text=Javin+Pawn+Broking" class="card-img-top" alt="Javin Pawn Broking">
-                        <div class="card-body d-flex flex-column">
-                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin Pawn Broking</h4>
-                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Pledge Tracking, Interest Calculation, Automated Reminders, Receipt Printing.</p>
-                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Jewelers, Pawn Brokers.</p>
-                            <div class="mt-auto d-flex justify-content-between gap-2">
-                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Pawn%20Broking" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
-                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                    <div class="card h-100 product-card">
+                        <!-- Jewelry/Pawn Image -->
+                        <img src="https://images.unsplash.com/photo-1610375461246-83ff852e5b25?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Javin Pawn Broking">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h4 class="card-title">Javin Pawn Broking</h4>
+                            <p class="feature-text mb-3">
+                                <i class="bi bi-check2-circle text-success me-2"></i><strong>Features:</strong> Pledge Tracking, Smart Interest Calculation, Automated SMS Reminders, Receipt Printing.
+                            </p>
+                            <p class="feature-text mb-4">
+                                <i class="bi bi-buildings-fill text-primary me-2"></i><strong>Industries:</strong> Jewelers, Pawn Brokers.
+                            </p>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Pawn%20Broking" target="_blank" class="btn btn-demo w-50"><i class="bi bi-play-fill me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-learn w-50">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -128,8 +225,8 @@
 
             </div>
             
-            <div class="text-center mt-5">
-                <a href="index.html" class="btn btn-secondary px-4 py-2"><i class="bi bi-arrow-left"></i> Back to Home</a>
+            <div class="text-center mt-5 pt-4">
+                <a href="index.html" class="btn btn-outline-dark px-4 py-2 fw-semibold" style="border-radius: 8px;"><i class="bi bi-arrow-left me-2"></i> Back to Home</a>
             </div>
 
         </div>
