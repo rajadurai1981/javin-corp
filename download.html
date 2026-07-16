@@ -1,110 +1,142 @@
 <!DOCTYPE html>
-<html lang="ta">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products & Downloads - JavinCorp</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Our Products | Javin Corp</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .product-card { transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 15px; overflow: hidden; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; }
+        .card-img-top { height: 200px; object-fit: cover; background-color: #f8f9fa; }
+        .btn-demo { background-color: #ffc107; font-weight: bold; border-radius: 8px; }
+        .btn-learn { border-radius: 8px; font-weight: 500; }
+    </style>
 </head>
-<body class="bg-gray-50 flex items-center justify-center min-h-screen font-sans py-12 px-4">
+<body class="bg-light">
 
-    <div class="max-w-3xl w-full">
-        <!-- பிரதான தலைப்பு -->
-        <div class="text-center mb-12">
-            <h1 class="text-3xl md:text-4xl font-extrabold text-[#1c2b33] mb-2">Javin Corp Product Portal</h1>
-            <p class="text-gray-500 text-sm md:text-base">Access and test our premium software applications below.</p>
+    <!-- Header Section -->
+    <section class="py-5" style="background: linear-gradient(90deg, #1a5276, #165276); color: white;">
+        <div class="container text-center pt-5 pb-3">
+            <h1 class="fw-bold display-5">Our Software Products</h1>
+            <p class="lead" style="opacity: 0.9;">Comprehensive solutions tailored to meet your business needs</p>
         </div>
+    </section>
 
-        <!-- தயாரிப்புகள் பட்டியல் (ஒன்றுக்கு கீழ் ஒன்றாக) -->
-        <div class="space-y-8">
+    <!-- Products Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- 1. Javin Medical ERP -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <!-- இங்கு உங்கள் Screenshot இமேஜ் பெயரை மாற்றவும் -->
+                        <img src="images/medical-erp.jpg" class="card-img-top" alt="Javin Medical ERP Screenshot">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin Medical ERP</h4>
+                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Billing, GST Reports, Inventory, Expiry Tracking, Sales Returns.</p>
+                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Pharmacies, Hospitals, Clinics.</p>
+                            <div class="mt-auto d-flex justify-content-between gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Medical%20ERP" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Javin POS -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="images/javin-pos.jpg" class="card-img-top" alt="Javin POS Screenshot">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin POS</h4>
+                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Barcode Billing, Stock Management, Daily Sales Reports, Fast Checkout.</p>
+                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Supermarkets, Retail Shops, Groceries.</p>
+                            <div class="mt-auto d-flex justify-content-between gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20POS" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Javin ERP -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="images/javin-erp.jpg" class="card-img-top" alt="Javin ERP Screenshot">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin ERP</h4>
+                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Complete Accounting, HR/Payroll, CRM, Manufacturing & Production.</p>
+                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Manufacturing, Wholesale, Enterprise.</p>
+                            <div class="mt-auto d-flex justify-content-between gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20ERP" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Javin Finance -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="images/javin-finance.jpg" class="card-img-top" alt="Javin Finance Screenshot">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin Finance</h4>
+                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Loan Management, EMI Calculation, Daily/Weekly Collection Tracking.</p>
+                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Microfinance, NBFCs, Money Lenders.</p>
+                            <div class="mt-auto d-flex justify-content-between gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Finance" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Javin Chit Fund -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="images/javin-chit.jpg" class="card-img-top" alt="Javin Chit Fund Screenshot">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin Chit Fund</h4>
+                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Member Tracking, Dividend Calculation, Auction Management, Receipts.</p>
+                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Chit Fund Companies.</p>
+                            <div class="mt-auto d-flex justify-content-between gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Chit%20Fund" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Javin Pawn Broking -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="images/javin-pawn.jpg" class="card-img-top" alt="Javin Pawn Broking Screenshot">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title fw-bold" style="color: #1a5276;">Javin Pawn Broking</h4>
+                            <p class="card-text mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Features:</strong> Pledge Tracking, Interest Calculation, Automated Reminders, Receipt Printing.</p>
+                            <p class="card-text mb-4"><i class="bi bi-building me-2 text-primary"></i><strong>Industries:</strong> Jewelers, Pawn Brokers.</p>
+                            <div class="mt-auto d-flex justify-content-between gap-2">
+                                <a href="https://wa.me/919962985155?text=I%20want%20a%20demo%20for%20Javin%20Pawn%20Broking" target="_blank" class="btn btn-demo flex-grow-1"><i class="bi bi-play-circle me-1"></i> Get Demo</a>
+                                <a href="#" class="btn btn-outline-primary btn-learn flex-grow-1">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             
-            <!-- 1. Javin Medical ERP Box -->
-            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="flex items-center gap-5 text-center md:text-left flex-col md:flex-row">
-                    <!-- மெடிக்கல் லோகோ சிம்பல் -->
-                    <div class="w-16 h-16 bg-red-100 text-[#ef233c] rounded-2xl flex items-center justify-center text-3xl shrink-0 shadow-sm">
-                        <i class="fa-solid fa-heart-pulse"></i>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold text-[#1c2b33]">Javin Medical ERP</h2>
-                        <p class="text-gray-400 text-xs mt-0.5"><i class="fa-brands fa-google text-blue-400 mr-1"></i> Secured & Verified by Google Drive</p>
-                        <p class="text-gray-500 text-sm mt-3 max-w-md">Complete offline software for smart pharmacies. Easy GST billing, inventory control, and simplified accounting solutions.</p>
-                    </div>
-                </div>
-                <div class="w-full md:w-auto shrink-0">
-                    <a href="https://drive.google.com/uc?export=download&id=1SjRdPGbvxgZgXLkDYRSn0966oIuDodsS"
-                       class="block text-center bg-[#ef233c] hover:bg-[#d90429] text-white font-bold py-3.5 px-6 rounded-xl transition-all duration-300 shadow-[0_5px_15px_rgba(239,35,60,0.2)] hover:shadow-[0_10px_20px_rgba(239,35,60,0.3)] transform hover:-translate-y-0.5 text-sm font-semibold whitespace-nowrap">
-                        <i class="fa-solid fa-download mr-1"></i> Download ERP Software
-                    </a>
-                </div>
-            </div>
-
-            <!-- 2. Javin Finance & Chit Fund Box (With 3 Direct Logins) -->
-            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-gray-100 space-y-6">
-                
-                <!-- தலைப்பு மற்றும் லோகோ -->
-                <div class="flex items-center gap-5 text-center md:text-left flex-col md:flex-row">
-                    <!-- பினான்ஸ் லோகோ சிம்பல் -->
-                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl shrink-0 shadow-sm">
-                        <i class="fa-solid fa-wallet"></i>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold text-[#1c2b33]">Javin Finance & Chit Fund</h2>
-                        <p class="text-gray-400 text-xs mt-0.5"><i class="fa-solid fa-cloud text-blue-400 mr-1"></i> Highly Secure Cloud Application</p>
-                        <p class="text-gray-500 text-sm mt-2 max-w-xl">Advanced automation solution for managing chits, finance loans, daily/weekly collections, and real-time customer tracking.</p>
-                    </div>
-                </div>
-
-                <!-- மூன்று லாகின் பட்டன்கள் (3 Direct Logins) -->
-                <div class="pt-4 border-t border-gray-100">
-                    <p class="font-bold text-gray-800 text-sm mb-4 flex items-center gap-1.5"><i class="fa-solid fa-right-to-bracket text-blue-600"></i> Select Login Portal:</p>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        
-                        <!-- A. Owner Login -->
-                        <div class="bg-gray-50 p-4 rounded-2xl border border-gray-200/60 flex flex-col justify-between">
-                            <div class="mb-3">
-                                <span class="font-bold text-gray-800 text-sm block">💻 1. Owner Login</span>
-                                <span class="text-gray-400 text-[11px] block mt-0.5">(Best on Laptop/PC)</span>
-                                <p class="text-xs text-gray-500 mt-2">User: <code class="bg-white px-1 py-0.5 rounded border text-red-500 font-bold">owner</code><br>Pass: <code class="bg-white px-1 py-0.5 rounded border text-red-500 font-bold">12345</code></p>
-                            </div>
-                            <a href="https://javincorpfin.pythonanywhere.com/login.html" target="_blank" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-lg text-xs transition-all">
-                                Open Owner Dash
-                            </a>
-                        </div>
-
-                        <!-- B. Collection Executive Login -->
-                        <div class="bg-gray-50 p-4 rounded-2xl border border-gray-200/60 flex flex-col justify-between">
-                            <div class="mb-3">
-                                <span class="font-bold text-gray-800 text-sm block">📱 2. Collection Executive</span>
-                                <span class="text-gray-400 text-[11px] block mt-0.5">(Best on Mobile)</span>
-                                <p class="text-xs text-gray-500 mt-2">User: <code class="bg-white px-1 py-0.5 rounded border text-red-500 font-bold">agent1</code><br>Pass: <code class="bg-white px-1 py-0.5 rounded border text-red-500 font-bold">12345</code></p>
-                            </div>
-                            <a href="https://javincorpfin.pythonanywhere.com/agent_app.html" target="_blank" class="block text-center bg-[#e85d04] hover:bg-[#dc2f02] text-white font-bold py-2 px-3 rounded-lg text-xs transition-all">
-                                Open Agent App
-                            </a>
-                        </div>
-
-                        <!-- C. Customer Login -->
-                        <div class="bg-gray-50 p-4 rounded-2xl border border-gray-200/60 flex flex-col justify-between">
-                            <div class="mb-3">
-                                <span class="font-bold text-gray-800 text-sm block">📱 3. Customer Login</span>
-                                <span class="text-gray-400 text-[11px] block mt-0.5">(Best on Mobile)</span>
-                                <p class="text-xs text-gray-500 mt-2">Mobile: <code class="bg-white px-1 py-0.5 rounded border text-green-600 font-bold">9600618881</code><br><span class="text-[10px] text-gray-400">(Enter Registered Number)</span></p>
-                            </div>
-                            <a href="https://javincorpfin.pythonanywhere.com/customer_passbook.html" target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-3 rounded-lg text-xs transition-all">
-                                Open Passbook
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
+            <div class="text-center mt-5">
+                <a href="index.html" class="btn btn-secondary px-4 py-2"><i class="bi bi-arrow-left"></i> Back to Home</a>
             </div>
 
         </div>
-    </div>
+    </section>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
