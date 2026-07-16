@@ -588,10 +588,7 @@
         }
 
         // Show popup after 2 seconds
-        setTimeout(() => {
-            document.getElementById('productPopup').style.display = 'flex';
-        }, 2000);
-
+        
         // Close popup on background click
         document.getElementById('productPopup').addEventListener('click', function(e) {
             if (e.target === this) closePopup();
