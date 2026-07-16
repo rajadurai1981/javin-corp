@@ -310,3 +310,34 @@ footer p {
 .animate {
     animation: fadeIn 0.8s ease forwards;
 }
+/* ===========================
+   CUSTOM STYLING FOR VERTICALS & PRODUCTS
+=========================== */
+
+/* Verticals Section - தலைப்பிற்கும் உள்ளடக்கத்திற்கும் இடைவெளி */
+.verticals-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* 6-Software Cards - கிரிட் இடைவெளி */
+.row.g-4 {
+    margin-top: 20px !important;
+}
+
+/* கார்டுகளுக்குள் உள்ள டெக்ஸ்ட் அலைன்மென்ட் */
+.product-card .card-body {
+    padding: 25px !important;
+}
+
+/* படங்கள் மற்றும் எழுத்துக்கள் இடையே இடைவெளி */
+.product-card img {
+    margin-bottom: 15px;
+}
+
+/* மொபைல் வியூவில் கார்டுகள் ஒன்றோடொன்று ஒட்டாமல் இருக்க */
+@media (max-width: 768px) {
+    .product-card {
+        margin-bottom: 30px;
+    }
+}
